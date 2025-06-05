@@ -1,0 +1,27 @@
+.dPageContainer {
+  display: flex;
+  padding: 5px;
+}
+.item {
+  width: 16vw;
+  height: 12vh;
+  background-color: #ffffff;
+  display: flex;
+  gap: 1vw;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7vw;
+  font-weight: 400;
+  padding: 0 2vw 0 2vw;
+
+  border: 5px solid #e9eaf1;
+  border-radius: 3px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.137);
+
+  margin: 3vw 0 0 1vw;
+}
+
+.item b {
+  font-size: 0.8vw;
+}

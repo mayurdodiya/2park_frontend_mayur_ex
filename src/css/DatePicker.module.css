@@ -1,0 +1,27 @@
+.datePickerWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(202, 204, 202);
+  border-radius: 6px;
+  box-shadow: none;
+  min-height: 34px;
+  padding: 0 10px; 
+  overflow: hidden;
+
+  margin-right: 0.5vw;
+}
+
+.datePickerInput {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 6px 0;
+}
+
+.datePickerInput::placeholder {
+  color: #777;
+  padding-left: 3px;
+}

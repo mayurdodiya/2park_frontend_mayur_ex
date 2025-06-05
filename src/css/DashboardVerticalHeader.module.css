@@ -1,0 +1,81 @@
+.container {
+  margin: 0;
+  padding: 0;
+  width: 15vw;
+  height: calc(100%);
+  background-color: rgb(225, 224, 233);
+  color: #2c4570;
+
+  overflow-y: auto;
+}
+
+.icon {
+  height: 1.16vw;
+  width: 1.16vw;
+  color: #B5B5C3;
+  margin-right: 8px;
+}
+
+/* Scoped scrollbar style */
+.container::-webkit-scrollbar {
+  width: 4px;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: #8d8989;
+  border-radius: 4px;
+}
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menuContent {
+  display: flex;
+  gap: 0.5vw;
+  padding-left: 1.2vw;
+  align-items: center;
+  height: 5vh;
+  font-size: 0.7vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  background-color: rgb(253, 253, 253);
+  color: #2c4570;
+}
+
+.menuContent:hover {
+  background-color: #2c4570;
+  color: white;
+}
+
+.menuContent_active {
+  display: flex;
+  gap: 0.5vw;
+  padding-left: 1.2vw;
+  align-items: center;
+  height: 5vh;
+  font-size: 0.7vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  background-color: #2c4570;
+  color: white;
+}
+
+.arrow {
+  height: 1.8vw;
+}
+
+.dropdownIcon {
+  width: .7vw;
+  height: .7vw;
+  margin-left: auto;
+  margin-right: 2vw;
+  color: gray;
+}
+
+/* sub menu */
+.subMenuItem {
+  padding-left: 2.5vw;
+  font-size: 0.65vw;
+  background-color: #f3f3f3;
+}

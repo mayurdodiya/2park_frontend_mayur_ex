@@ -1,0 +1,18 @@
+.rowPerPageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.rowPerPage {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 36px 8px 12px;
+  border: 1px solid rgb(202, 204, 202);
+  border-radius: 6px;
+  font-size: 14px;
+  min-height: 38px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}

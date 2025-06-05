@@ -1,0 +1,139 @@
+/* InActivePopUpMenu.module.css */
+.warning_icon {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #f9c89c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.exclamation {
+  font-size: 36px;
+  color: #f9c89c;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.containerDiv {
+  width: 450px;
+  height: 275px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+}
+
+.text {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 25px;
+  margin: 2px;
+}
+
+.confirmationText {
+  font-size: 15px;
+  margin: 2px 0 20px 0;
+}
+
+.btnWrraper {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.button {
+  height: 43px;
+  padding: 10px 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.buttonBlue {
+  background: #26437C;
+}
+
+.buttonRed {
+  background: #eb2859;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* Animation Classes */
+.fadeIn {
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+
+.open {
+  animation: scaleIn 0.3s ease-in forwards;
+}
+
+.close {
+  animation: scaleOut 0.3s ease-out forwards;
+}

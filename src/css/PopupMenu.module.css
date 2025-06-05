@@ -1,0 +1,123 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal.module.css */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50vw;
+  min-height: 60vh;
+  max-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 0; 
+}
+
+.main_content {
+  flex: 1; /* Pushes footer down */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  font-size: larger;
+  color: black;
+}
+
+.input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  height: 38px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;   
+
+  /* display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;  */
+
+  /* margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; */
+
+  /* margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; */
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.primary {
+  background: #113f70;
+  color: #fff;
+}
+
+.midDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  font-size: larger;
+  color: black;
+}
+
+.genderLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.genderLabel input[type="radio"] {
+  accent-color: #24578d; /* nice blue radio */
+  cursor: pointer;
+}
+
+.parkSalesInput {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}

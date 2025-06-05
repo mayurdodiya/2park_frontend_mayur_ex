@@ -1,0 +1,269 @@
+.container {
+  margin: 8vh 0 0 2vw;
+  padding: 0.5vw;
+  width: calc(100% - 5%);
+  height: 75vh;
+  background-color: rgb(255, 255, 255);
+  color: #2c4570;
+  overflow-y: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.secContainer {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  height: 10vh;
+}
+
+.mainText {
+  font-size: 1.2vw;
+  margin: 0;
+  padding-bottom: 0.4vw;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.801);
+}
+
+.filterBarWarraper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1vw;
+  font-size: 0.7vw;
+}
+
+.searchBtn {
+  border: 2px solid #2c4570;
+  background-color: #2c4570;
+  border-radius: 6px;
+  box-shadow: none;
+  min-height: 38px;
+  color: white;
+  font-size: 0.8vw;
+  padding: 0 13px;
+
+  display: flex;
+  gap: 0.2vw;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.plusIcon {
+  color: white;
+  width: 20px;
+}
+
+/* Table.module.css */
+.tableContainer {
+  padding: 5px 0 0 0;
+  overflow-y: auto;
+  color: black;
+  font-size: 12px;
+  max-height: 79%;
+}
+
+.thead th {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  /* z-index: 1; */
+}
+
+.heading {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 62vh;
+}
+
+.tableRow:hover {
+  background-color: #f0f0f0;
+}
+
+.thead tr {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  max-height: 2.5vh;
+
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: rgb(71, 76, 99);
+}
+
+.table th {
+  background-color: #ffffff;
+  white-space: nowrap;
+  height: 2.5vh;
+
+  color: rgb(36, 36, 36);
+}
+
+.table tr {
+  /* background-color: #ffffff; */
+  /* white-space: nowrap; */
+  max-height: 2.5vh;
+  /* color: rgb(36, 36, 36); */
+}
+
+/* loader */
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #2c4570;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* input style */
+.inputStyle {
+  border: 1px solid rgb(202, 204, 202);
+  border-radius: 6px;
+  box-shadow: none;
+  padding: 0 0 0 8px;
+  color: #333;
+  min-height: 36px;
+  min-width: 70%;
+}
+
+.inputStyle::placeholder {
+  color: #777;
+  font-size: 0.7vw;
+}
+
+.paginationWrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5vw;
+  font-size: 13px;
+  color: #747474;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.rowPerPageWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rowPerPage {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  width: 40px;
+  color: #747474;
+}
+
+.invisibleButton {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Customize scrollbar for Webkit-based browsers */
+.tableContainer::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+  width: 8px; /* Vertical scrollbar width */
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background-color: #bebfc2;
+  border-radius: 6px;
+  border: 2px solid #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #1d2e50;
+}
+
+.activeBtn {
+  width: 70px;
+  cursor: pointer;
+  height: 34px;
+  border: 1px solid #324f8a;
+  border-radius: 4px;
+  color: white;
+  background-color: #26437c;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 50px;
+}
+
+.activeBtnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pen {
+  color: #324f8a;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.inActiveBtn {
+  width: 70px;
+  cursor: pointer;
+  height: 34px;
+  border: 1px solid #df411a;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 50px;
+  background-color: #df411a;
+}

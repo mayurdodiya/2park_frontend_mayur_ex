@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal.module.css */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 17px;
+  border-radius: 12px;
+  width: 30vw;
+  min-height: 33vh;
+  /* max-height: 90vh; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hrTag {
+  width: 100%;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.titleWrapper h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.closedIcon {
+  color: gray;
+  width: 1vw;
+  height: 1vw;
+  cursor: pointer;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw
+}
+
+.firstContent {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 27%;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondContent {
+  border: 1px dashed rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 73%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.uploadIcon {
+  width: 22px;
+  height: 22px;
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 100;
+}
+
+.saveButton {
+  width:70px;
+  height:35px;
+  background-color: #113f70;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+
+  margin: 10px 0 0 0;
+}
